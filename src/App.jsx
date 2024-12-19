@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Snowfall from 'react-snowfall'
 import './App.css'
 
 function App() {
@@ -8,7 +7,14 @@ function App() {
 
   return (
     <>
-     <h1>Oxana is the best</h1>
+      <Snowfall
+        // Changes the snowflake color
+        color="blue"
+        // Applied to the canvas element
+        style={{ background: '#fff' }}
+        // Controls the number of snowflakes that are created (default 150)
+        snowflakeCount={200}
+      />
     </>
   )
 }
