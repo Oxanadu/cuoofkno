@@ -1,0 +1,8 @@
+.wrapper {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background-image: url('./изображение_viber_2024-12-19_17-04-02-261.jpg');
+    background-size: cover;
+    z-index: 1;
+}
