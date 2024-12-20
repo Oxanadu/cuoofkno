@@ -6,3 +6,8 @@
     background-size: cover;
     z-index: 1;
 }
+.bell {
+    max-width: 160px;
+    max-height: 200px;
+    cursor: pointer;
+}
