@@ -18,7 +18,7 @@ function App() {
       <audio
         ref={audioRef}
 
-        controls={true} >
+        controls={false} >
         <source type="audio/mp3" src={music} />
       </audio>
       <div >
