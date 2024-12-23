@@ -9,9 +9,18 @@ import Bell from './components/Bell'
 function App() {
 
   const audioRef = useRef(null)
+  const [play, setPlay] = useState(true)
 
   const handlePlay = () => {
-    audioRef.current.play();
+    if (play) {
+      audioRef.current.play();
+    }
+    else {
+
+      audioRef.current.pause();
+    }
+
+    setPlay(prev => !prev)
   };
   return (
     <div className={s.wrapper}>
@@ -21,7 +30,7 @@ function App() {
         controls={false} >
         <source type="audio/mp3" src={music} />
       </audio>
-      <Bell handlePlay={handlePlay}/>
+      <Bell handlePlay={handlePlay} play={play} />
       <Snowfall
         // Changes the snowflake color
         color="#fff"

@@ -11,3 +11,21 @@
     max-height: 200px;
     cursor: pointer;
 }
+.belll {
+    width: 160px;
+    height: 200px;
+    cursor: pointer;
+    animation: 0.05s linear 0s infinite alternate ring;
+}
+
+/* it is possible to animate multiple properties in a single animation */
+@keyframes ring {
+  from {
+    width: 160px;
+    height: 200px;
+  }
+  to {
+    width: 200px;
+    height: 260px;
+  }
+}
