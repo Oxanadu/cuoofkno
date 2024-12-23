@@ -5,6 +5,7 @@ import s from './img/snow.module.css'
 import music from './img/47835607.mp3'
 import { useEffect, useRef, useState } from 'react'
 import Bell from './components/Bell'
+import Video from './components/Video'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <source type="audio/mp3" src={music} />
       </audio>
       <Bell handlePlay={handlePlay} play={play} />
+      {!play && <Video />}
       <Snowfall
         // Changes the snowflake color
         color="#fff"
