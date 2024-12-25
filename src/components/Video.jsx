@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
+import video from '../img/video.mp4'
 
 function Video() {
   return (
-    <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+    <ReactPlayer 
+    playing={true}
+    url={video}/>
   )
 }
 
