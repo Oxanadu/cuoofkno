@@ -16,6 +16,7 @@ function App() {
   const handlePlay = () => {
     if (play) {
       audioRef.current.play();
+      audioRef.current.volume = 0.1
     }
     else {
 
@@ -28,7 +29,7 @@ function App() {
     <div className={s.wrapper}>
       <audio
         ref={audioRef}
-
+        volume={false}
         controls={false} >
         <source  type="audio/mp3" src={music} />
       </audio>
