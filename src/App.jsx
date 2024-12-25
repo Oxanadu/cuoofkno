@@ -6,6 +6,7 @@ import music from './img/47835607.mp3'
 import { useEffect, useRef, useState } from 'react'
 import Bell from './components/Bell'
 import Video from './components/Video'
+import win from "./img/win.png"
 
 function App() {
 
@@ -29,10 +30,19 @@ function App() {
         ref={audioRef}
 
         controls={false} >
-        <source type="audio/mp3" src={music} />
+        <source  type="audio/mp3" src={music} />
       </audio>
+      
       <Bell handlePlay={handlePlay} play={play} />
-      {!play && <Video />}
+      <div className={s.blockVideo}>
+        {!play && <Video className={s.video}/>}
+
+      <div className={s.wind}>
+      <img className={s.win} src={win} alt="" />
+      </div>
+      </div>
+      
+
       <Snowfall
         // Changes the snowflake color
         color="#fff"
@@ -41,6 +51,7 @@ function App() {
         // Controls the number of snowflakes that are created (default 150)
         snowflakeCount={200}
       />
+     
     </div>
   )
 }
