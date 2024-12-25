@@ -89,3 +89,43 @@ top: 426px;
 }
 
 }
+@media (max-width: 768px) {
+  .wind, .win {
+  width: 450px;
+  position: absolute;
+  right: 58px;
+  top: 90px;
+
+}
+.video {
+  right: 116px;
+}
+.wrapper {
+  background-position: center right;
+}
+
+}
+
+@media (max-width: 425px) {
+  .wind, .win {
+    right: -48px;
+    top: 95px;
+    width: 400px;
+  }
+.video {
+  top: 339px;
+  height: 360px;
+ right: -114px;
+  width: 400px;
+    }
+  .wrapper {
+  background-position: center right;
+}
+  
+}
+
+
+
+
+
+
