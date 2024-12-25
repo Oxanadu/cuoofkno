@@ -16,7 +16,7 @@ function App() {
   const handlePlay = () => {
     if (play) {
       audioRef.current.play();
-      audioRef.current.volume = 0.1
+      audioRef.current.volume = 0.06
     }
     else {
 
